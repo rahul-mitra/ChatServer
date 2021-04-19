@@ -41,8 +41,8 @@ app.get('/', (req, res) => {
 
 app.post("/login", (req, res) => {
     console.log(req.body);
-    var response = { status: "user validated", token: "12345", success: true }
-    var errorresponse = { status: "incorrect details", success: false }
+    var response = { message: "user validated", token: "12345", success: true }
+    var errorresponse = { message: "incorrect details", success: false }
     for (const key in clientList) {
         if (Object.prototype.hasOwnProperty.call(clientList, key)) {
             const element = clientList[key];
