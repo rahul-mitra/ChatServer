@@ -21,8 +21,7 @@ const options: CorsOptions = {
         'X-Requested-With',
         'Content-Type',
         'Accept',
-        'X-Access-Token',
-        'Access-Control-Allow-Origin'
+        'X-Access-Token'
     ],
     credentials: true,
     methods: 'GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE',
